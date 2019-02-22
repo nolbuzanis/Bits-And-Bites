@@ -1,10 +1,17 @@
 import React from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
+import places from '../apis/places';
 
 class App extends React.Component {
-  onTermSubmit = term => {
-    console.log(term);
+  onTermSubmit = async term => {
+    const response = await places.get('/place/nearbysearch/json', {
+      params: {
+        radius: term,
+        location: '-33.8670522,151.1957362' //Sydney australia
+      }
+    });
+    console.log(response);
   };
 
   render() {
