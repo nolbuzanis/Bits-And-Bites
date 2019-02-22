@@ -3,6 +3,10 @@ import './App.css';
 import SearchBar from './SearchBar';
 
 class App extends React.Component {
+  onTermSubmit = term => {
+    console.log(term);
+  };
+
   render() {
     return (
       <div className='app ui container'>
@@ -10,7 +14,7 @@ class App extends React.Component {
           Get Outside
           <div className='sub header'>Exercise. Explore. Get outside.</div>
         </h1>
-        <SearchBar />
+        <SearchBar onTermSubmit={this.onTermSubmit} />
       </div>
     );
   }

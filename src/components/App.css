@@ -4,16 +4,16 @@ body {
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+  padding-top: 100px;
 }
 
 h1.header {
-  margin-top: 100px !important;
   color: white !important;
 }
 
 .search-bar {
   left: 50%;
-  margin-left: -114px;
+  margin-left: -89px;
 }
 
 @-webkit-keyframes Gradient {
