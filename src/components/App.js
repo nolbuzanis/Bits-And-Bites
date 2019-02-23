@@ -11,8 +11,8 @@ class App extends React.Component {
     const response = await edamam.get('/search', {
       params: { q: term }
     });
-    console.log(response.data.hits);
-    //this.setState({ recipes: response.data.results });
+    this.setState({ recipes: response.data.hits });
+    console.log(this.state.recipes);
   };
 
   render() {
