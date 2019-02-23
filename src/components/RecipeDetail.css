@@ -1,4 +1,5 @@
 .recipe-detail {
+  position: relative;
   cursor: pointer !important;
   padding: 5px !important;
   border-radius: 10px;
@@ -9,8 +10,25 @@
   transition: all ease 0.5s;
   background: rgba(0, 0, 0, 0.1);
 }
+.recipe-detail:hover .header {
+  color: rgb(56, 108, 204) !important;
+  transition: all ease 0.5s;
+}
 
 .recipe-list {
   padding-left: 10px !important;
   padding-right: 10px !important;
+}
+
+.content {
+  max-width: 80% !important;
+}
+.content div {
+  margin-bottom: 5px;
+}
+
+.top-right-label {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

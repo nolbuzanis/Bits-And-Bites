@@ -24,8 +24,11 @@ const RecipeDetail = ({ recipe }) => {
       <div className='content'>
         <div className='header big ui'>{recipe.label}</div>
         <div className='meta'>{calories} Calories</div>
-        <div className='description ui list'>{ingredients}</div>
+        <div className='description ui horizontal divided list'>
+          {ingredients}
+        </div>
       </div>
+      <div className='top-right-label ui label'>Test</div>
     </div>
   );
 };
