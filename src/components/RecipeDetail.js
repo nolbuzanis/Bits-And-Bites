@@ -2,6 +2,8 @@ import React from 'react';
 import './RecipeDetail.css';
 
 const RecipeDetail = ({ recipe }) => {
+  const calories = parseInt(recipe.calories);
+
   return (
     <div className='item recipe-detail'>
       <img
@@ -11,6 +13,7 @@ const RecipeDetail = ({ recipe }) => {
       />
       <div className='content'>
         <div className='header big ui'>{recipe.label}</div>
+        <div className='meta'>{calories} Calories</div>
       </div>
     </div>
   );
