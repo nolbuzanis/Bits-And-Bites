@@ -7,11 +7,7 @@ const RecipeList = props => {
     return <RecipeDetail key={recipe.recipe.uri} recipe={recipe.recipe} />;
   });
 
-  return (
-    <div className='ui list recipe-list selection very relaxed'>
-      {recipesList}
-    </div>
-  );
+  return <div className='ui list recipe-list very relaxed'>{recipesList}</div>;
 };
 
 export default RecipeList;

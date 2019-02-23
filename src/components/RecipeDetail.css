@@ -1,0 +1,10 @@
+.recipe-detail {
+  cursor: pointer !important;
+  padding: 5px !important;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.recipe-detail:hover {
+  transition: all ease 0.5s;
+  background: rgba(0, 0, 0, 0.1);
+}

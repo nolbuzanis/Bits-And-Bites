@@ -10,7 +10,12 @@ const RecipeDetail = ({ recipe }) => {
   });
 
   return (
-    <div className='item recipe-detail'>
+    <div
+      className='item recipe-detail'
+      onClick={() => {
+        window.open(recipe.url);
+      }}
+    >
       <img
         className='ui image rounded small middle aligned'
         src={recipe.image}
