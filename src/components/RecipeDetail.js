@@ -1,8 +1,13 @@
 import React from 'react';
 import './RecipeDetail.css';
+import Ingredient from './Ingredient';
 
 const RecipeDetail = ({ recipe }) => {
   const calories = parseInt(recipe.calories);
+
+  const ingredients = recipe.ingredients.map(ingredient => {
+    return <Ingredient item={ingredient.text} />;
+  });
 
   return (
     <div className='item recipe-detail'>
@@ -14,6 +19,7 @@ const RecipeDetail = ({ recipe }) => {
       <div className='content'>
         <div className='header big ui'>{recipe.label}</div>
         <div className='meta'>{calories} Calories</div>
+        <div className='description ui list'>{ingredients}</div>
       </div>
     </div>
   );
