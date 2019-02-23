@@ -17,8 +17,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='app ui container'>
-        <h1 className='ui header white'>Bits into Bites</h1>
+      <div className='app ui'>
+        <h1 className='ui header white floated left'>Bits Into Bites</h1>
         <SearchBar onTermSubmit={this.onTermSubmit} />
         <RecipeList recipes={this.state.recipes} />
       </div>

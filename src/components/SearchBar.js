@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
             onChange={this.onInputChange}
             value={this.state.term}
             type='text'
-            className='centerInput fluid'
+            className='centerInput'
             placeholder='banana, yogurt, etc'
           />
         </form>

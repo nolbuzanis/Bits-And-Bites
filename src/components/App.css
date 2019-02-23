@@ -1,9 +1,27 @@
 body {
-  padding-top: 50px;
   /*text-align: center;*/
 }
 
+#root {
+  background-color: white;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .search-bar {
-  text-align: center !important;
-  font-size: 200%;
+  height: 70px;
+  background-color: rgb(56, 108, 204);
+  padding: 15px;
+}
+
+form {
+  /*max-width: 500px !important;*/
+  float: right;
+  width: 40%;
+}
+
+h1 {
+  text-align: center;
+  color: white !important;
+  padding: 15px !important;
 }
