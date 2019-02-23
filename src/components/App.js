@@ -1,18 +1,14 @@
 import React from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
+import axios from 'axios';
 
 class App extends React.Component {
   onTermSubmit = async term => {
-    /*
-    const response = await places.get('/place/nearbysearch/json', {
-      params: {
-        radius: term,
-        location: '43.70011, -79.4163' //Toronto Downtown
-      }
+    const response = await axios.get('http://www.recipepuppy.com/api/', {
+      params: { i: term }
     });
-    console.log(response);*/
-    console.log('Clicked');
+    console.log(response.data.results);
   };
 
   render() {
