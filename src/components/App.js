@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
-import axios from 'axios';
+import edamam from '../apis/edamam';
 import RecipeList from './RecipeList';
 
 class App extends React.Component {
   state = { recipes: [] };
 
   onTermSubmit = async term => {
-    const response = await axios.get('http://www.recipepuppy.com/api/', {
-      params: { i: term }
+    const response = await edamam.get('/search', {
+      params: { q: term }
     });
-    this.setState({ recipes: response.data.results });
+    console.log(response.data.hits);
+    //this.setState({ recipes: response.data.results });
   };
 
   render() {
