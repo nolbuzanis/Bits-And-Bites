@@ -1,14 +1,16 @@
 import React from 'react';
+import './RecipeDetail.css';
 
 const RecipeDetail = ({ recipe }) => {
   return (
-    <div className='item'>
-      <img className='ui image' src={recipe.image} alt={recipe.label} />
+    <div className='item recipe-detail'>
+      <img
+        className='ui image rounded small middle aligned'
+        src={recipe.image}
+        alt={recipe.label}
+      />
       <div className='content'>
-        <a className='header' href={recipe.url}>
-          {recipe.label}
-        </a>
-        <div className='description'>Ingredients: </div>
+        <div className='header big ui'>{recipe.label}</div>
       </div>
     </div>
   );
