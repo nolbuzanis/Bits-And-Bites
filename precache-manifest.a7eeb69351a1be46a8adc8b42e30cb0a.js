@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Bits-Into-Bites/static/css/main.0fec3d3c.chunk.css"
   },
   {
-    "revision": "f96a80cf9c0d64462e0acade72615ae1",
+    "revision": "4655d58012d1ce2961eee17bc9bf40a4",
     "url": "/Bits-Into-Bites/index.html"
   }
 ];
