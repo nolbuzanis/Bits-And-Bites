@@ -12,7 +12,6 @@ class App extends React.Component {
       params: { q: term }
     });
     this.setState({ recipes: response.data.hits });
-    //console.log(this.state.recipes);
   };
 
   render() {
