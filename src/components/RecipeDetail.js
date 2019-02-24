@@ -1,12 +1,17 @@
 import React from 'react';
 import './RecipeDetail.css';
 import Ingredient from './Ingredient';
+import HealthLabel from './HealthLabel';
 
 const RecipeDetail = ({ recipe }) => {
   const calories = parseInt(recipe.calories);
 
   const ingredients = recipe.ingredients.map(ingredient => {
     return <Ingredient item={ingredient.text} />;
+  });
+
+  const labels = recipe.healthLabels.map(label => {
+    return <HealthLabel label={label} />;
   });
 
   return (
@@ -28,7 +33,7 @@ const RecipeDetail = ({ recipe }) => {
           {ingredients}
         </div>
       </div>
-      <div className='top-right-label ui label'>Test</div>
+      <div className='top-right-labels'>{labels}</div>
     </div>
   );
 };
