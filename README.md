@@ -3,7 +3,7 @@ Bits Into Bites
 
 React-based web app to use up leftover food in the fridge at the end of the week. Search terms are run through the Edamam API, and the results are displayed on the page, where each recipe has an image, calorie count, ingrdient list, health labels, and a link to the page the recipe was originally sourced from.
 
-**[Visit Get Outside](https://nolbuzanis.github.io/Bits-Into-Bites/)**
+**[Visit Bits Into Bites](https://nolbuzanis.github.io/Bits-Into-Bites/)**
 
 Contributing
 -------
